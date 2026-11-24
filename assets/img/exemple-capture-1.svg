@@ -1,0 +1,8 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 750 1400' width='750' height='1400'>
+<defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#D9CFB6'/><stop offset='1' stop-color='#BFB394'/></linearGradient></defs>
+<rect width='750' height='1400' fill='url(#g)'/>
+<rect x='30.0' y='30.0' width='690.0' height='1340.0' fill='none' stroke='#8C8068' stroke-width='4.5' stroke-dasharray='15.0 11.25'/>
+<g fill='none' stroke='#6E6450' stroke-width='9.0' stroke-linejoin='round'><rect x='280.5' y='586.0' width='189.0' height='128.25' rx='13.5'/><path d='M334.5 586.0 l16.875 -27.0 h47.25 l16.875 27.0'/><circle cx='375.0' cy='650.125' r='37.125'/></g>
+<text x='375.0' y='804.25' text-anchor='middle' font-family='Courier New, monospace' font-weight='bold' font-size='33.75' fill='#4E4636' letter-spacing='2'>CAPTURE D’ÉCRAN</text>
+<text x='375.0' y='854.875' text-anchor='middle' font-family='Courier New, monospace' font-size='23.625' fill='#6E6450'>exemple-capture-1</text>
+</svg>
