@@ -23,18 +23,18 @@ const CONFIG = {
     sigle: "CNDI",
     devise: "Observer. Archiver. S'inquiéter.",
     service: "Direction de la Surveillance des Individus Ordinaires",
-    directeur: "[NOM_DU_DIRECTEUR]",       // signe les documents officiels
+    directeur: "La team meltin's",       // signe les documents officiels
     versionPortail: "3.1.4",
   },
 
   /* ---------- LE SUJET (votre ami) ---------- */
   sujet: {
-    prenom: "[PRÉNOM]",
-    nom: "[NOM]",
-    surnom: "[SURNOM]",
+    prenom: "Jean-Charles",
+    nom: "MCHANGAMA",
+    surnom: "Le mec drôle(pas si sûr)",
     // Date de « découverte » : alimente le compteur de surveillance.
     // Format obligatoire : AAAA-MM-JJ (ex. "2015-09-01").
-    dateDecouverte: "2015-09-01",
+    dateDecouverte: "2025-05-05",
     // Jour de l'anniversaire, format MM-JJ (servira à une surprise).
     anniversaire: "11-28",
   },
@@ -46,7 +46,7 @@ const CONFIG = {
     classification: "Secret Individu",
     statut: "Classifié",                   // affiché en tampon rouge
     volume: "Volume XIV sur ∞",
-    agentReferent: "[NOM_DE_L_AGENT_REFERENT]", // apparaît caviardé
+    agentReferent: "agent lilian", // apparaît caviardé
   },
 
   /* ---------- PAGE D'ACCUEIL ---------- */
@@ -68,11 +68,11 @@ const CONFIG = {
 
   /* ---------- BANDEAU DÉFILANT « AVIS À LA POPULATION » ---------- */
   bandeau: [
-    "Avis n°118 : le sujet a été aperçu en train de [ACTIVITE_SUSPECTE]. Restez calmes.",
+    "Avis n°118 : le sujet a été aperçu en train de chausser une pair de crampon. Restez calmes.",
     "La cellule de crise est ouverte du lundi au vendredi, de 14 h à 14 h 15.",
     "Rappel : toute ressemblance avec un individu normal serait purement fortuite.",
     "Le service des réclamations est temporairement remplacé par un répondeur.",
-    "Avis n°119 : [AVIS_PRIVATE_JOKE].",
+    "Avis n°119 : Nous pensons que le sujet prépare son prochain match.",
   ],
 
   /* ---------- SÉQUENCE DE DÉMARRAGE ---------- */
@@ -107,18 +107,18 @@ const CONFIG = {
      pour le caviarder (barre noire).
      ================================================================= */
   fiche: {
-    photo: "assets/img/identite.svg",          // ex. "assets/img/identite.jpg"
-    fonction: "[FONCTION_OFFICIELLE_INVENTEE]", // ex. « Inspecteur général des siestes »
-    lieuDecouverte: "[LIEU_DE_DECOUVERTE]",
-    signesParticuliers: "[SIGNES_PARTICULIERS]",
+    photo: "assets/img/identite.png",          // ex. "assets/img/identite.jpg"
+    fonction: "[Enorme acteur et humouriste]", // ex. « Inspecteur général des siestes »
+    lieuDecouverte: "[Zagreb]",
+    signesParticuliers: "[jamais dans le 15eme arrondissement]",
     competences: [
-      "[COMPETENCE_RECONNUE_1]",
-      "[COMPETENCE_RECONNUE_2]",
-      "[COMPETENCE_RECONNUE_3]",
+      "[maitrise du ballon rond]",
+      "[acteur]",
+      "[project manager hors pair]",
     ],
     defauts: [
-      "[DEFAUT_RECENSE_1]",
-      "[DEFAUT_RECENSE_2]",
+      "[choix de boissons difficile]",
+      "[parfait]",
       "[DEFAUT_RECENSE_3]",
     ],
     // niveau de 1 à 5 : 1 Vert · 2 Jaune · 3 Orange · 4 Rouge · 5 Écarlate
@@ -280,14 +280,14 @@ const CONFIG = {
      pas une vraie protection). Majuscules, accents et espaces en trop
      sont ignorés. Plusieurs mots de passe possibles : ["un", "deux"].
      ================================================================= */
-  motDePasse: "[MOT_DE_PASSE]",
+  motDePasse: "football",
   secret: {
-    indice: "[INDICE_DU_MOT_DE_PASSE]", // affiché après 2 erreurs
+    indice: "activité pratiqué par le sujet", // affiché après 2 erreurs
     titre: "Joyeux anniversaire, {prenom}",
     message:
       "[PARAGRAPHE_1_DU_MESSAGE_D_ANNIVERSAIRE]\n\n" +
       "[PARAGRAPHE_2_DU_MESSAGE_D_ANNIVERSAIRE]",
-    signature: "[SIGNATURE_DES_AMIS]",
+    signature: "Le meltin's group",
     photo: "assets/img/exemple-photo-1.svg", // "" pour ne pas en mettre
     video: "",                                // ex. "assets/video/message.mp4"
     poster: "",                               // image d'aperçu de la vidéo
