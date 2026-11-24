@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>CNDI · Pièce introuvable</title>
+  <script>
+    /* GitHub Pages affiche ce fichier pour toute adresse inconnue.
+       On renvoie vers le portail, qui affiche sa page 404 maison.
+       RACINE est détectée automatiquement pour une adresse du type
+       https://pseudo.github.io/nom-du-depot/. Pour un site « utilisateur »
+       (https://pseudo.github.io/) ou un nom de domaine perso, mettez "/". */
+    var RACINE = "auto";
+    (function () {
+      var segments = location.pathname.split('/').filter(Boolean);
+      var racine = RACINE;
+      if (racine === "auto") {
+        racine = /\.github\.io$/.test(location.hostname) && segments.length ? '/' + segments[0] + '/' : '/';
+      }
+      var chemin = location.pathname.slice(racine.length) || location.pathname;
+      location.replace(racine + '#/introuvable?chemin=' + encodeURIComponent(chemin));
+    })();
+  </script>
+  <style>body{background:#0D110F;color:#8FC79A;font:14px monospace;display:grid;place-items:center;min-height:100vh;margin:0}</style>
+</head>
+<body><p>Recherche de la pièce au registre…</p></body>
+</html>

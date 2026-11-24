@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CNDI · Portail officiel · Dossier n°001</title>
+  <meta name="description" content="Portail officiel du Centre National de Documentation de l'Individu.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0D110F">
+  <link rel="icon" href="assets/icons/sceau.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/ibm-plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/courier-prime-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <!-- Évite de montrer l'écran de démarrage une 2e fois dans la même session -->
+  <script>try{if(sessionStorage.getItem('cndi-demarre'))document.documentElement.classList.add('deja-demarre')}catch(e){}</script>
+</head>
+<body>
+  <a class="evitement" href="#vue">Aller au contenu</a>
+
+  <!-- ===== SÉQUENCE DE DÉMARRAGE ===== -->
+  <div id="demarrage" class="demarrage" role="status" aria-live="polite">
+    <div class="demarrage__ecran">
+      <p class="demarrage__titre" id="demarrage-titre"></p>
+      <div class="demarrage__lignes" id="demarrage-lignes"></div>
+      <div class="demarrage__barre" aria-hidden="true"><span id="demarrage-progression"></span></div>
+      <p class="demarrage__final" id="demarrage-final"></p>
+    </div>
+    <button type="button" class="demarrage__passer" id="demarrage-passer">Passer ▸</button>
+  </div>
+
+  <!-- ===== EN-TÊTE SYSTÈME ===== -->
+  <header class="entete">
+    <a href="#/" class="entete__marque" aria-label="Retour à l'accueil du portail">
+      <span class="entete__sceau" id="entete-sceau" aria-hidden="true"></span>
+      <span class="entete__nom"><strong>CNDI</strong><small>Portail officiel</small></span>
+    </a>
+    <div class="entete__session" aria-hidden="true">
+      <span class="entete__voyant"></span>
+      <span id="entete-agent">AGT-····</span>
+      <span class="entete__sep">·</span>
+      <span id="entete-chrono">00:00:00</span>
+    </div>
+    <button type="button" class="entete__menu" id="bouton-menu" aria-controls="repertoire" aria-expanded="false">
+      <span class="entete__menu-icone" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="entete__menu-label">Répertoire</span>
+    </button>
+    <div class="entete__chargement" id="chargement" aria-hidden="true"></div>
+  </header>
+
+  <div class="disposition">
+    <!-- ===== RÉPERTOIRE (menu) ===== -->
+    <nav id="repertoire" class="repertoire" aria-label="Répertoire des pièces"></nav>
+    <div class="voile" id="voile" hidden></div>
+
+    <div class="colonne">
+      <ol class="ariane" id="ariane" aria-label="Fil d'Ariane"></ol>
+      <main id="vue" class="vue" tabindex="-1"></main>
+      <footer class="pied" id="pied"></footer>
+    </div>
+  </div>
+
+  <!-- ===== VÉRIFICATION D'HABILITATION (transition d'accès) ===== -->
+  <div id="verification" class="verification" hidden>
+    <div class="verification__boite" role="status">
+      <p class="verification__titre">Vérification de l'habilitation</p>
+      <div class="verification__barre"><span></span></div>
+      <p class="verification__ligne" id="verification-ligne"></p>
+    </div>
+  </div>
+
+  <!-- ===== NOTIFICATIONS SYSTÈME ===== -->
+  <div id="notifications" class="notifications" aria-live="polite"></div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
